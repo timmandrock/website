@@ -1,0 +1,70 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Random Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        .content-row {
+            display: flex;
+            align-items: center; /* Vertically center items */
+            justify-content: space-between; /* Space between the items */
+        }
+
+        .login-form {
+            margin-left: 20px; /* Add some space between the image and the form */
+        }
+        .commentbox {
+            width: 200%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shrek Club</h1>
+    </header>
+    <main>
+        <p>1: Hello this is the best website for the SHREK FANS </p>
+
+        <div class="content-row">
+            <a
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">
+            <img src="Images/Shrek_(character).png" width="692" height="300" />
+            </a>
+        </div>
+        <hr/>
+        <a href="https://www.google.com/search?sca_esv=557378578&sxsrf=AB5stBjF7DRiVGaq-2hKqZhSKmk3q4RZQQ:1692173142869&q=shrek+billeder&tbm=isch&source=lnms&sa=X&ved=2ahUKEwj3zNCY3OCAAxVmbPEDHWcpCTQQ0pQJegQIDRAB&biw=2133&bih=1081&dpr=0.9">
+        <p>2: if u wann know more about shrek CLICK HERE or for a suprise click the picture :D</p>
+        </a>
+
+            <div class="login-form">
+                <label for="login">Login:</label>
+                
+                <div>
+                <input type="text" id="login" placeholder="Enter login" required>
+            </div>
+                <label for="password">Password:</label>
+                <div>
+                <input type="password" id="password" placeholder="Enter password" required>
+            </div>
+            <label for="comments">comments</label>
+            <div>
+                <textarea id="comments" placeholder="Any new comments" style="height:200px; width:500px"></textarea>
+            </div>
+            
+            </div>
+    </main>
+    <footer>
+        <div>
+        <p>website created by Tim</p>
+        </div>
+    </footer>
+</body>
